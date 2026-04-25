@@ -87,3 +87,60 @@ The robot is equipped with DC motors controlled via a motor driver. PWM signals 
 🔹 **Power Management**
 
 A dedicated power system is designed to supply stable voltage and current to all components, including the Jetson Nano, sensors, and motors. Special attention is given to power distribution, as insufficient current supply—particularly for sensors such as LiDAR—can lead to unstable behavior or system failures.
+
+# 🧩 Software Architecture
+
+The software system is developed using the Robot Operating System (ROS Noetic), providing a modular and scalable framework for integrating perception, localization, and control components. The architecture is designed around distributed ROS nodes that communicate through standardized interfaces, enabling flexibility and real-time performance.
+
+🔹 **ROS Node Structure**
+
+The system is composed of multiple ROS nodes, each responsible for a specific task within the pipeline. These nodes operate concurrently and exchange data through ROS communication mechanisms. The key components include:
+
+Sensor Nodes:
+Responsible for publishing raw data from LiDAR, ToF, ultrasonic sensors, IMU, and wheel encoders.
+Odometry Node:
+Processes encoder and IMU data to estimate the robot’s motion and publishes odometry information.
+SLAM Node:
+Generates a map of the environment using LiDAR data.
+Localization Node (AMCL):
+Estimates the robot’s pose within the generated map using probabilistic methods.
+Navigation Node (move_base):
+Handles path planning and motion control toward target goals.
+Custom Interface Nodes:
+Manage communication between the Jetson Nano and Arduino, including command transmission and sensor feedback.
+
+🔹 **Communication Mechanisms**
+
+The system relies on standard ROS communication tools:
+
+Topics:
+Used for continuous data streaming between nodes. Key topics include:
+/cmd_vel for velocity commands
+/odom for odometry data
+/scan for LiDAR data
+Services:
+Used for synchronous operations such as resetting costmaps or updating parameters during runtime.
+TF (Transform Tree):
+Maintains the spatial relationship between coordinate frames such as map, odom, and base_link. This is essential for consistent localization and navigation.
+
+🔹 **Coordinate Frames**
+
+Accurate transformation between coordinate frames is critical for system performance. The main frames used in this project include:
+
+map: Global reference frame representing the environment
+odom: Local reference frame derived from odometry
+base_link: Robot’s base frame
+
+The transformation between these frames is continuously updated using odometry and localization outputs, enabling the robot to maintain an accurate estimate of its position.
+
+🔹 **Sensor Fusion for Odometry**
+
+To improve motion estimation, the system combines wheel encoder data with IMU measurements. Encoder data provides linear displacement information, while the IMU contributes orientation and angular velocity data. This fusion reduces accumulated drift and improves robustness, particularly during rotational movements and dynamic conditions.
+
+🔹 **Embedded Communication**
+
+Communication between the Jetson Nano and Arduino is implemented using serial and I2C protocols. The Arduino handles real-time control and sensor acquisition, while the Jetson processes high-level algorithms. Data exchange includes:
+
+Sending velocity commands from ROS to the Arduino
+Receiving encoder and sensor data from the Arduino
+Converting low-level measurements into ROS-compatible messages
