@@ -16,9 +16,9 @@ This project implements a complete autonomous mobile robot system based on the R
 
 At a high level, the robot performs three main tasks:
 
-Environment Mapping (SLAM): Generating a map of an unknown environment using LiDAR data.
-Localization: Estimating the robot’s position within the generated map using probabilistic methods.
-Autonomous Navigation: Planning and executing collision-free paths toward user-defined goals.
+**Environment Mapping (SLAM)**: Generating a map of an unknown environment using LiDAR data.
+**Localization**: Estimating the robot’s position within the generated map using probabilistic methods.
+**Autonomous Navigation**: Planning and executing collision-free paths toward user-defined goals.
 
 The system architecture consists of two main layers:
 
@@ -26,25 +26,25 @@ The system architecture consists of two main layers:
 
 The physical platform is built around an embedded computing unit and multiple sensors:
 
-Jetson Nano as the main processing unit running ROS
-Arduino for low-level motor control and sensor interfacing
-LiDAR sensor (RPLidar A1) for environment perception
-Ultrasonic and ToF sensors for short-range obstacle detection and redundancy
-Wheel encoders + IMU for improved odometry estimation
+**Jetson Nano** as the main processing unit running ROS
+**Arduino** for low-level motor control and sensor interfacing
+**LiDAR sensor** (RPLidar A1) for environment perception
+**Ultrasonic** and **ToF sensors** for short-range obstacle detection and redundancy
+**Wheel encoders** + **IMU** for improved odometry estimation
 Custom power management system for stable operation
 
 🔹 **Software Layer**
 
 The software stack is implemented using ROS (Noetic) and is composed of several interconnected modules:
 
-SLAM packages (e.g., GMapping, Hector SLAM) for map generation
-AMCL for probabilistic localization
-move_base for autonomous navigation
-Costmaps for obstacle representation and path safety
+**SLAM packages** (e.g., GMapping, Hector SLAM) for map generation
+**AMCL** for probabilistic localization
+**move_base** for autonomous navigation
+**Costmaps** for obstacle representation and path safety
 Custom ROS nodes for sensor integration and communication between Jetson and Arduino
 
-To improve localization accuracy, the system combines wheel encoder data with IMU measurements, reducing drift and enhancing motion estimation, especially during rotations and uneven movements.
+To improve localization accuracy, the system combines **wheel encoder data with IMU measurements**, reducing drift and enhancing motion estimation, especially during rotations and uneven movements.
 
-The system relies on standard ROS communication mechanisms such as topics, services, and transform (tf) trees to ensure synchronization between different modules.
+The system relies on standard ROS communication mechanisms such as **topics**, **services**, and **transform (tf) trees** to ensure synchronization between different modules.
 
 Overall, this architecture enables the robot to perceive its environment, estimate its position, and navigate autonomously while handling real-world uncertainties such as sensor noise and hardware limitations.
