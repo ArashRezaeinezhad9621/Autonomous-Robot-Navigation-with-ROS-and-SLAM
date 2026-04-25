@@ -32,6 +32,7 @@ LiDAR sensor (RPLidar A1) for environment perception
 Ultrasonic and ToF sensors for short-range obstacle detection and redundancy
 Wheel encoders + IMU for improved odometry estimation
 Custom power management system for stable operation
+
 🔹 **Software Layer**
 
 The software stack is implemented using ROS (Noetic) and is composed of several interconnected modules:
