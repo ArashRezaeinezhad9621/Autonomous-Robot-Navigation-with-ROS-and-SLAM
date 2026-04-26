@@ -39,3 +39,13 @@ The robot uses a distributed architecture where:
 - Arduino handles low-level sensor acquisition
 - Jetson Nano processes data and runs ROS
 - Communication is done via Serial / I2C
+
+## 🧩 Features
+
+- Autonomous navigation in unknown environments
+- Real-time mapping using SLAM
+- Accurate localization using AMCL
+- Dynamic obstacle avoidance
+- Multi-sensor fusion for improved accuracy
+- Simulation support (Gazebo)
+- Visualization (RViz)
