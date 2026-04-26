@@ -16,3 +16,26 @@ The project includes:
 ![Gazebo](Images/Gazebo.png)
 
 ![Real Robot](Images/Real_robot.png)
+
+## 🔧 System Architecture
+
+The system consists of multiple hardware and software components working together:
+
+### 🔹 Hardware
+- Jetson Nano (main processing unit)
+- Arduino (low-level control & sensor interface)
+- RPLidar A1 (environment perception)
+- Wheel encoders (odometry)
+- IMU sensor (orientation estimation)
+- Ultrasonic / ToF sensors (obstacle detection)
+
+### 🔹 Software
+- ROS Noetic (Ubuntu 20.04)
+- SLAM algorithms (GMapping, Hector SLAM)
+- Navigation stack (move_base)
+- Sensor drivers and custom ROS nodes
+
+The robot uses a distributed architecture where:
+- Arduino handles low-level sensor acquisition
+- Jetson Nano processes data and runs ROS
+- Communication is done via Serial / I2C
