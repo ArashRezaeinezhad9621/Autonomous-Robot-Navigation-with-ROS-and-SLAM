@@ -49,3 +49,13 @@ The robot uses a distributed architecture where:
 - Multi-sensor fusion for improved accuracy
 - Simulation support (Gazebo)
 - Visualization (RViz)
+
+## Results
+
+The robot was tested in both simulation and real-world environments.
+
+Key achievements:
+- Successful map generation using LIDAR
+- Stable localization using AMCL
+- Smooth navigation using DWA local planner
+- Integration of additional sensors into costmap
