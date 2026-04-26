@@ -1,4 +1,4 @@
-# Autonomous Robot Navigation with ROS and SLAM
+# Autonomous Mobile Robot with ROS (SLAM & Navigation)
 
 ## Overview
 This project presents the design and implementation of an autonomous mobile robot using ROS (Robot Operating System). The system integrates SLAM, localization, navigation, and multi-sensor fusion to enable autonomous movement in real-world environments.
@@ -12,3 +12,4 @@ The project includes:
 - Sensor fusion (Encoder + IMU + LIDAR)
 - Real-world deployment and testing
 - Simulation in Gazebo and visualization in RViz
+
