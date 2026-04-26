@@ -13,4 +13,6 @@ The project includes:
 - Real-world deployment and testing
 - Simulation in Gazebo and visualization in RViz
 
-![Robot Overview](Images/Gazebo.png)
+![Gazebo](Images/Gazebo.png)
+
+![Real Robot](Images/Real_robot.png)
