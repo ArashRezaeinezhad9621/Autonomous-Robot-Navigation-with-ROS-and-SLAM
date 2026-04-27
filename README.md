@@ -71,6 +71,6 @@ Key achievements:
 
 <table align="center">
   <tr>
-    <td><img src="Images/Disinfection_Robot.gif" width="400"/></td>
+    <td><img src="Images/Disinfection_Robot.gif" width="135"/></td>
   </tr>
 </table>
