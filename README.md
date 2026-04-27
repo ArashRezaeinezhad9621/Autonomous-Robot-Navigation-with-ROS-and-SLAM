@@ -61,3 +61,10 @@ Key achievements:
 - Integration of additional sensors into costmap
 
 ![Gazebo Simulation](Images/Gazebo_Simulation_.gif)
+
+<table align="center">
+  <tr>
+    <td><img src="Images/Gazebo_Simulation.gif" width="400"/></td>
+    <td><img src="Images/Gazebo_Simulation.gif" width="400"/></td>
+  </tr>
+</table>
