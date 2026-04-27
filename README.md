@@ -60,7 +60,7 @@ Key achievements:
 - Smooth navigation using DWA local planner
 - Integration of additional sensors into costmap
 
-<table align="center">
+<table align="left">
   <tr>
     <td><img src="Images/Gazebo_Simulation.gif" width="400"/></td>
     <td><img src="Images/Disinfection_Robot.gif" width="135"/></td>
