@@ -59,3 +59,5 @@ Key achievements:
 - Stable localization using AMCL
 - Smooth navigation using DWA local planner
 - Integration of additional sensors into costmap
+
+![Gazebo Simulation](Images/Gazebo_Simulation.gif)
