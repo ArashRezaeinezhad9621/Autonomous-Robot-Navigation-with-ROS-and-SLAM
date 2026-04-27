@@ -74,4 +74,3 @@ Key achievements:
     <td><img src="Images/Disinfection_Robot.gif" width="400"/></td>
   </tr>
 </table>
-Disinfection_Robot
