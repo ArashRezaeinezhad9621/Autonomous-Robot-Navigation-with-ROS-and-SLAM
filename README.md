@@ -147,14 +147,14 @@ Based on the comparative analysis, the MPU9250 was selected as the primary IMU s
 
 ## ✅ Implemented Features
 
-SLAM-based mapping using IMU and encoder fusion
-Semi real-time obstacle detection
-Waypoint-based mission execution
-IMU–encoder sensor fusion for improved odometry
-Improved DWA navigation (handling reverse motion issues)
-Integration of auxiliary sensors for obstacle detection
-LiDAR-based pose correction in addition to odometry
-Full simulation in ROS and Gazebo
+- SLAM-based mapping using IMU and encoder fusion
+- Semi real-time obstacle detection
+- Waypoint-based mission execution
+- IMU–encoder sensor fusion for improved odometry
+- Improved DWA navigation (handling reverse motion issues)
+- Integration of auxiliary sensors for obstacle detection
+- LiDAR-based pose correction in addition to odometry
+- Full simulation in ROS and Gazebo
 
 ## 🔮 Future Work
 
