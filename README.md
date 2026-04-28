@@ -19,6 +19,8 @@ The project includes:
 <table align="left">
   <tr>
     <td><img src="Images/Gazebo.png"/></td>
+  </tr>
+  <tr>
     <td><img src="Images/Real_robot.png"/></td>
   </tr>
 </table>
