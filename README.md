@@ -6,6 +6,7 @@ This project presents the design and implementation of an autonomous mobile robo
 
 The robot is built using a combination of embedded systems (Jetson Nano + Arduino), LIDAR-based perception, and additional sensors such as IMU and ultrasonic modules.
 </p>
+
 The project includes:
 - SLAM-based mapping (GMapping, Hector SLAM)
 - Localization using AMCL
