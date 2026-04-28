@@ -109,18 +109,9 @@ In mobile robotics, relying solely on wheel encoder data for localization can le
 
 ### 📊 Accelerometer Analysis
 
-Key parameters considered for accelerometer evaluation include:
-
-Measurement range (±2g to ±16g)
-Nonlinearity
-Inter-axis alignment error
-Cross-axis sensitivity
-Zero-g bias and temperature drift
-Output noise characteristics
-Sensitivity variation with temperature
-ADC resolution
-
-These parameters directly affect the accuracy and stability of motion estimation, particularly in dynamic environments.
+<p align="justify">
+Key parameters considered for accelerometer evaluation include:Measurement range (±2g to ±16g), Nonlinearity, Inter-axis alignment error, Cross-axis sensitivity, Zero-g bias and temperature drift, Output noise characteristics, Sensitivity variation with temperature, and ADC resolution. These parameters directly affect the accuracy and stability of motion estimation, particularly in dynamic environments.
+</p>
 
 <p align="center">
   <img src="Images/Accelerometer_Performance.png"/>
@@ -128,17 +119,9 @@ These parameters directly affect the accuracy and stability of motion estimation
 
 ### 📊 Gyroscope Analysis
 
-For the gyroscope, the following characteristics were analyzed:
-
-Full-scale range (±250 to ±2000 °/s)
-Sensitivity scale factor and tolerance
-Nonlinearity
-Zero-rate offset (ZRO) and its temperature drift
-Output noise and bias stability
-Cross-axis sensitivity
-Temperature-dependent variations
-
-These factors determine the reliability of angular velocity estimation and long-term drift behavior.
+<p align="justify">
+For the gyroscope, the following characteristics were analyzed: Full-scale range (±250 to ±2000 °/s), Sensitivity scale factor and tolerance, Nonlinearity, Zero-rate offset (ZRO) and its temperature drift, Output noise and bias stability, Cross-axis sensitivity, and Temperature-dependent variations. These factors determine the reliability of angular velocity estimation and long-term drift behavior.
+</p>
 
 <p align="center">
   <img src="Images/Gyroscope_Performance.png"/>
@@ -146,9 +129,7 @@ These factors determine the reliability of angular velocity estimation and long-
 
 ### 🧲 Magnetometer Considerations
 
-Magnetometer data is essential for orientation estimation (yaw angle), but it is highly sensitive to environmental disturbances.
-
-To obtain accurate measurements, calibration is required to compensate for:
+Magnetometer data is essential for orientation estimation (yaw angle), but it is highly sensitive to environmental disturbances. To obtain accurate measurements, calibration is required to compensate for:
 
 Hard-iron distortion (constant offset)
 Soft-iron distortion (shape deformation of the magnetic field)
