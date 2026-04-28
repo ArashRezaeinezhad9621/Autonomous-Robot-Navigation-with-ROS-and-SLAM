@@ -160,28 +160,30 @@ Full simulation in ROS and Gazebo
 
 Several improvements are planned to enhance autonomy, safety, and robustness:
 
-Emergency stop button for manual override
-Human detection and safety shutdown system
-Improved navigation in low-feature environments (corridors and large-scale spaces)
-Autonomous docking and charging system
-ROS-based user interface for mission control
-Integration of depth cameras (e.g., RealSense)
-Definition of restricted zones in the map
-Runtime parameter tuning capability
-Fully autonomous coverage path planning
-Battery monitoring and alert system
-Monitoring of fluid level, flow rate, and concentration
-Visual and auditory status indicators
-Network reliability improvements
-Mechanical redesign and improved sensor placement
-IMU placement optimization near the center of mass
-Fault detection and automatic reset for sensors/modules
-Navigation improvements in dynamic and crowded environments
-Full integration of analog and digital subsystems
-Integration of disinfection subsystem with robot platform
-Advanced collision detection and intelligent stopping behavior
+- Emergency stop button for manual override
+- Human detection and safety shutdown system
+- Improved navigation in low-feature environments (corridors and large-scale spaces)
+- Autonomous docking and charging system
+- ROS-based user interface for mission control
+- Integration of depth cameras (e.g., RealSense)
+- Definition of restricted zones in the map
+- Runtime parameter tuning capability
+- Fully autonomous coverage path planning
+- Battery monitoring and alert system
+- Monitoring of fluid level, flow rate, and concentration
+- Visual and auditory status indicators
+- Network reliability improvements
+- Mechanical redesign and improved sensor placement
+- IMU placement optimization near the center of mass
+- Fault detection and automatic reset for sensors/modules
+- Navigation improvements in dynamic and crowded environments
+- Full integration of analog and digital subsystems
+- Integration of disinfection subsystem with robot platform
+- Advanced collision detection and intelligent stopping behavior
 
 
 ## 🎯 Conclusion
 
+<p align="justify">
 This project demonstrates a complete autonomous robotic system that integrates perception, localization, and navigation into a unified framework. By combining LiDAR-based SLAM with IMU and encoder fusion, the system improves robustness compared to traditional odometry-based approaches. The work also addresses practical engineering challenges such as sensor calibration, multi-device communication, and system integration under real-world constraints. Overall, the system shows a strong foundation for autonomous indoor robotics, with clear pathways for future improvements toward fully deployable real-world applications.
+</p>
