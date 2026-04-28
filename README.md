@@ -129,12 +129,9 @@ For the gyroscope, the following characteristics were analyzed: Full-scale range
 
 ### 🧲 Magnetometer Considerations
 
-Magnetometer data is essential for orientation estimation (yaw angle), but it is highly sensitive to environmental disturbances. To obtain accurate measurements, calibration is required to compensate for:
-
-Hard-iron distortion (constant offset)
-Soft-iron distortion (shape deformation of the magnetic field)
-
-Calibration was performed by rotating the sensor across all axes, ensuring proper field mapping.
+<p align="justify">
+Magnetometer data is essential for orientation estimation (yaw angle), but it is highly sensitive to environmental disturbances. To obtain accurate measurements, calibration is required to compensate for: **Hard-iron** distortion (constant offset) and **Soft-iron** distortion (shape deformation of the magnetic field). Calibration was performed by rotating the sensor across all axes, ensuring proper field mapping.
+</p>
 
 ### ⚙️ System Integration
 
