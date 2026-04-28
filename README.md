@@ -64,5 +64,6 @@ Key achievements:
   <tr>
     <td><img src="Images/Gazebo_Simulation.gif" width="400"/></td>
     <td><img src="Images/Disinfection_Robot.gif" width="135"/></td>
+    <td><img src="Images/Avoid_Obstacles.gif" width="120"/></td>
   </tr>
 </table>
