@@ -100,3 +100,69 @@ Based on accuracy, stability, and integration capability, the VL53L1X sensor was
 <p align="center">
   <img src="Images/Setup_sensors.png" width="500" height="300"/>
 </p>
+
+
+## 🧠 IMU Selection and Sensor Characterization
+<p align="justify">
+In mobile robotics, relying solely on wheel encoder data for localization can lead to significant errors, particularly in scenarios involving wheel slippage. To address this limitation, inertial measurements were incorporated to improve robustness and accuracy through sensor fusion. A detailed evaluation of multiple IMU sensors was conducted based on their datasheet specifications, including accelerometer, gyroscope, and magnetometer characteristics.
+</p>
+
+### 📊 Accelerometer Analysis
+
+Key parameters considered for accelerometer evaluation include:
+
+Measurement range (±2g to ±16g)
+Nonlinearity
+Inter-axis alignment error
+Cross-axis sensitivity
+Zero-g bias and temperature drift
+Output noise characteristics
+Sensitivity variation with temperature
+ADC resolution
+
+These parameters directly affect the accuracy and stability of motion estimation, particularly in dynamic environments.
+
+<p align="center">
+  <img src="Images/Accelerometer_Performance.png"/>
+</p>
+
+### 📊 Gyroscope Analysis
+
+For the gyroscope, the following characteristics were analyzed:
+
+Full-scale range (±250 to ±2000 °/s)
+Sensitivity scale factor and tolerance
+Nonlinearity
+Zero-rate offset (ZRO) and its temperature drift
+Output noise and bias stability
+Cross-axis sensitivity
+Temperature-dependent variations
+
+These factors determine the reliability of angular velocity estimation and long-term drift behavior.
+
+<p align="center">
+  <img src="Images/Gyroscope_Performance.png"/>
+</p>
+
+### 🧲 Magnetometer Considerations
+
+Magnetometer data is essential for orientation estimation (yaw angle), but it is highly sensitive to environmental disturbances.
+
+To obtain accurate measurements, calibration is required to compensate for:
+
+Hard-iron distortion (constant offset)
+Soft-iron distortion (shape deformation of the magnetic field)
+
+Calibration was performed by rotating the sensor across all axes, ensuring proper field mapping.
+
+### ⚙️ System Integration
+
+<p align="justify">
+Sensor data is acquired using an Arduino microcontroller via the I2C protocol and transmitted to the Jetson platform through serial communication. A common ground connection between the Arduino and Jetson is required to ensure stable communication and prevent data loss or sensor timeouts. Initially, onboard libraries were used to directly compute orientation (roll, pitch, yaw). However, these methods rely heavily on magnetometer data, which can introduce errors if not properly calibrated.
+</p>
+
+### 🎯 Final IMU Selection
+
+<p align="justify">
+Based on the comparative analysis, the MPU9250 was selected as the primary IMU sensor due to its balanced performance in terms of accuracy, noise characteristics, and integration capability. By fusing IMU data with wheel encoder measurements, the system significantly improves localization accuracy, particularly in challenging conditions such as wheel slippage.
+</p>
