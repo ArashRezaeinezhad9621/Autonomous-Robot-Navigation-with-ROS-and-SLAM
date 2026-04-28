@@ -78,4 +78,7 @@ The map of the laboratory environment was generated using the implemented SLAM f
 This map serves as the foundation for localization and autonomous navigation. The integration of sensor data (including odometry and IMU) improves the consistency and reliability of the generated map.
 </p>
 
-<img src="Images/Map.png" width="500" height="300"/>
+<p align="center">
+  <img src="Images/Map.png" width="500" height="300"/>
+</p>
+
