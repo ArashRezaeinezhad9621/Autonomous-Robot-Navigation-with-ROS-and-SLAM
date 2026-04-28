@@ -82,3 +82,8 @@ This map serves as the foundation for localization and autonomous navigation. Th
   <img src="Images/Map.png" width="500"/>
 </p>
 
+# 🧭 Sensor Selection and Evaluation
+
+<p align="center">
+In this section, multiple distance sensors were evaluated to determine the most suitable option for robotic navigation and obstacle detection. The considered sensors include VL53L1X, VL53L0X, Mtof171000C0, and SRF08. A comparative analysis was conducted based on key characteristics such as field of view (FOV), measurement range, communication protocol, cost, and ease of integration. Additionally, a practical evaluation was performed by measuring sensor outputs at known distances ranging from 10 cm to 60 cm. The measured values were recorded and compared against ground-truth distances to assess accuracy and consistency.
+</p>
