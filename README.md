@@ -72,7 +72,7 @@ Key achievements:
 <br clear="left"/>
 
 
-# 🗺️ Environment Map
+## 🗺️ Environment Map
 <p align="justify">
 The map of the laboratory environment was generated using the implemented SLAM framework. By teleoperating the robot throughout the workspace, a consistent representation of the environment—including walls and obstacles—was constructed.
 This map serves as the foundation for localization and autonomous navigation. The integration of sensor data (including odometry and IMU) improves the consistency and reliability of the generated map.
@@ -82,7 +82,7 @@ This map serves as the foundation for localization and autonomous navigation. Th
   <img src="Images/Map.png" width="500"/>
 </p>
 
-# 🧭 Sensor Selection and Evaluation
+## 🧭 Sensor Selection and Evaluation
 
 <p align="justify">
 In this section, multiple distance sensors were evaluated to determine the most suitable option for robotic navigation and obstacle detection. The considered sensors include VL53L1X, VL53L0X, Mtof171000C0, and SRF08. A comparative analysis was conducted based on key characteristics such as field of view (FOV), measurement range, communication protocol, cost, and ease of integration. Additionally, a practical evaluation was performed by measuring sensor outputs at known distances ranging from 10 cm to 60 cm. The measured values were recorded and compared against ground-truth distances to assess accuracy and consistency.
@@ -93,7 +93,7 @@ In this section, multiple distance sensors were evaluated to determine the most 
   <img src="Images/Distance_Measurement_Accuracy_Evaluation.png" width="500"/>
 </p>
 
-# 📌 Final Sensor Configuration Decision
+## 📌 Final Sensor Configuration Decision
 
 Based on accuracy, stability, and integration capability, the VL53L1X sensor was selected as the primary ranging sensor due to its superior accuracy and programmable I2C configuration. To enhance robustness, an additional ultrasonic sensor (SRF08) was incorporated for redundancy in cases where laser-based measurements may fail (e.g., transparent surfaces such as glass).
 
