@@ -69,8 +69,11 @@ Key achievements:
 </table>
 <br clear="left"/>
 
+
 # 🗺️ Environment Map
+<p align="justify">
 The map of the laboratory environment was generated using the implemented SLAM framework. By teleoperating the robot throughout the workspace, a consistent representation of the environment—including walls and obstacles—was constructed.
 This map serves as the foundation for localization and autonomous navigation. The integration of sensor data (including odometry and IMU) improves the consistency and reliability of the generated map.
+</p>
 
 ![Map](Images/Map.png)
