@@ -1,10 +1,11 @@
 # 🚀 Autonomous Mobile Robot with ROS (SLAM & Navigation)
 
 ## 🧠 Overview
+<p align="justify">
 This project presents the design and implementation of an autonomous mobile robot using ROS (Robot Operating System). The system integrates SLAM, localization, navigation, and multi-sensor fusion to enable autonomous movement in real-world environments.
 
 The robot is built using a combination of embedded systems (Jetson Nano + Arduino), LIDAR-based perception, and additional sensors such as IMU and ultrasonic modules.
-
+</p>
 The project includes:
 - SLAM-based mapping (GMapping, Hector SLAM)
 - Localization using AMCL
