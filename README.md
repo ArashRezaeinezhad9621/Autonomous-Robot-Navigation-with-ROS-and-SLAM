@@ -18,17 +18,13 @@ The project includes:
 
 <table align="left">
   <tr>
-    <td><img src="Images/Gazebo.png"/></td>
+    <td><img src="Images/Gazebo.png" width="600"/></td>
   </tr>
   <tr>
-    <td><img src="Images/Real_robot.png"/></td>
+    <td><img src="Images/Real_robot.png" width="600"/></td>
   </tr>
 </table>
 <br clear="left"/>
-
-![Gazebo](Images/Gazebo.png)
-
-![Real Robot](Images/Real_robot.png)
 
 ## 🔧 System Architecture
 
