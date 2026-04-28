@@ -67,7 +67,7 @@ Key achievements:
     <td><img src="Images/Avoid_Obstacles.gif" width="120"/></td>
   </tr>
 </table>
-
+<br clear="left"/>
 
 # 🗺️ Environment Map
 The map of the laboratory environment was generated using the implemented SLAM framework. By teleoperating the robot throughout the workspace, a consistent representation of the environment—including walls and obstacles—was constructed.
