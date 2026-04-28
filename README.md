@@ -18,10 +18,10 @@ The project includes:
 
 <table align="left">
   <tr>
-    <td><img src="Images/Gazebo.png" width="750"/></td>
+    <td><img src="Images/Gazebo.png" width="800"/></td>
   </tr>
   <tr>
-    <td><img src="Images/Real_robot.png" width="750"/></td>
+    <td><img src="Images/Real_robot.png" width="800"/></td>
   </tr>
 </table>
 <br clear="left"/>
