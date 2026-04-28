@@ -15,6 +15,15 @@ The project includes:
 - Real-world deployment and testing
 - Simulation in Gazebo and visualization in RViz
 
+
+<table align="left">
+  <tr>
+    <td><img src="Images/Gazebo.png"/></td>
+    <td><img src="Images/Real_robot.png"/></td>
+  </tr>
+</table>
+<br clear="left"/>
+
 ![Gazebo](Images/Gazebo.png)
 
 ![Real Robot](Images/Real_robot.png)
