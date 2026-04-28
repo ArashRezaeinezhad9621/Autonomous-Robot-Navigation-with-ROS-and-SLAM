@@ -98,5 +98,5 @@ In this section, multiple distance sensors were evaluated to determine the most 
 Based on accuracy, stability, and integration capability, the VL53L1X sensor was selected as the primary ranging sensor due to its superior accuracy and programmable I2C configuration. To enhance robustness, an additional ultrasonic sensor (SRF08) was incorporated for redundancy in cases where laser-based measurements may fail (e.g., transparent surfaces such as glass).
 
 <p align="center">
-  <img src="Images/Setup_sensors.png" width="400" height="200"/>
+  <img src="Images/Setup_sensors.png" width="500" height="300"/>
 </p>
