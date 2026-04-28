@@ -79,6 +79,6 @@ This map serves as the foundation for localization and autonomous navigation. Th
 </p>
 
 <p align="center">
-  <img src="Images/Map.png" width="500" height="300"/>
+  <img src="Images/Map.png" width="500"/>
 </p>
 
