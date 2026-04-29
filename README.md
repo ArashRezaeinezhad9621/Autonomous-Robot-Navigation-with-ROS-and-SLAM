@@ -40,7 +40,7 @@ The system consists of multiple hardware and software components working togethe
 
 <table align="center">
   <tr>
-    <td><img src="Images/Schematic.gif"/></td>
+    <td><img src="Images/Schematic.gif" width="120"/></td>
   </tr>
 </table>
 <br clear="left"/>
@@ -81,7 +81,6 @@ Key achievements:
     <td><img src="Images/Gazebo_Simulation.gif" width="400"/></td>
     <td><img src="Images/Disinfection_Robot.gif" width="135"/></td>
     <td><img src="Images/Avoid_Obstacles.gif" width="120"/></td>
-    <td><img src="Images/Schematic.gif" width="100"/></td>
   </tr>
 </table>
 <br clear="left"/>
