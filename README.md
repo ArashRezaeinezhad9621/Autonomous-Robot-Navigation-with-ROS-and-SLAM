@@ -43,8 +43,7 @@ The system consists of multiple hardware and software components working togethe
     <td><img src="Images/Schematic.gif" width="120"/></td>
   </tr>
 </table>
-<br clear="left"/>
-
+<br clear="left"/> 
 ### 🔹 Software
 - ROS Noetic (Ubuntu 20.04)
 - SLAM algorithms (GMapping, Hector SLAM)
