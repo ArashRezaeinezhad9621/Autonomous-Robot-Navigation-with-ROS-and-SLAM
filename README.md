@@ -38,6 +38,13 @@ The system consists of multiple hardware and software components working togethe
 - IMU sensor (orientation estimation)
 - Ultrasonic / ToF sensors (obstacle detection)
 
+<table align="center">
+  <tr>
+    <td><img src="Images/Schematic.gif"/></td>
+  </tr>
+</table>
+<br clear="left"/>
+
 ### 🔹 Software
 - ROS Noetic (Ubuntu 20.04)
 - SLAM algorithms (GMapping, Hector SLAM)
@@ -58,13 +65,6 @@ The robot uses a distributed architecture where:
 - Multi-sensor fusion for improved accuracy
 - Simulation support (Gazebo)
 - Visualization (RViz)
-
-<table align="center">
-  <tr>
-    <td><img src="Images/Schematic.gif"/></td>
-  </tr>
-</table>
-<br clear="left"/>
 
 ## Results
 
