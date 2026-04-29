@@ -59,6 +59,13 @@ The robot uses a distributed architecture where:
 - Simulation support (Gazebo)
 - Visualization (RViz)
 
+<table align="center">
+  <tr>
+    <td><img src="Images/Schematic.gif"/></td>
+  </tr>
+</table>
+<br clear="left"/>
+
 ## Results
 
 The robot was tested in both simulation and real-world environments.
@@ -69,7 +76,7 @@ Key achievements:
 - Smooth navigation using DWA local planner
 - Integration of additional sensors into costmap
 
-<table align="left">
+<table align="center">
   <tr>
     <td><img src="Images/Gazebo_Simulation.gif" width="400"/></td>
     <td><img src="Images/Disinfection_Robot.gif" width="135"/></td>
