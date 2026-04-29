@@ -38,12 +38,6 @@ The system consists of multiple hardware and software components working togethe
 - IMU sensor (orientation estimation)
 - Ultrasonic / ToF sensors (obstacle detection)
 
-<table align="center">
-  <tr>
-    <td><img src="Images/Schematic.gif" width="120"/></td>
-  </tr>
-</table>
-<br clear="left"/> 
 ### 🔹 Software
 - ROS Noetic (Ubuntu 20.04)
 - SLAM algorithms (GMapping, Hector SLAM)
